@@ -10,9 +10,9 @@ interface BreadcrumbProps {
 }
 
 const Breadcrumb: React.FC<BreadcrumbProps> = ({ items }) => {
- console.log(items)
+//  console.log(items)
   return (
-    <nav className="flex bg-green-300 p-2" aria-label="Breadcrumb">
+    <nav className="flex bg-gray-100 p-2" aria-label="Breadcrumb">
       <ol className="inline-flex items-center">
         {items.length === 2 && items[items.length - 1].label === "Dashboard" ? (
           <span className="ml-1 text-sm font-medium text-gray-500 md:ml-2 dark:text-gray-400">
